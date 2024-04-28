@@ -55,7 +55,7 @@ main {
 .cabecalho__links * {
     margin-bottom: 10px;
     font-family: var(--fonte-principal);
-    font-size: 1.05em;
+    font-size: 1.1em;
     color: var(--fonte-cor);
     cursor: pointer;
 }
