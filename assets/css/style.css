@@ -22,8 +22,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    margin: 70px 0;
+    gap: 60px;
+    margin: 45px 0;
 }
 
 /* CABECALHO */
@@ -44,6 +44,9 @@ main {
     margin: 5vh 0;
     font-family: var(--fonte-secundaria);
     font-size: 1.5em;
+}
+.cabecalho__logo p {
+    font-size: 1.8em;
 }
 .cabecalho__logo img {
     height: 49px;
@@ -331,6 +334,10 @@ hr {
 
 @media (min-width: 1240px) {
 
+    main {
+        gap: 80px;
+        margin: 70px 0;
+    }
     /* CABECALHO */
 
     .cabecalho { 
@@ -341,6 +348,10 @@ hr {
     .cabecalho__logo, .cabecalho__links *, .cabecalho__links {
         margin: 0;
     }
+    .cabecalho__logo p {
+        font-size: 1.5em;
+    }
+    
     .cabecalho__links {
         width: 40%;
         flex-direction: row;
