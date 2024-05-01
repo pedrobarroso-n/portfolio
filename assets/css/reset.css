@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     color: #FFFFFF;
     cursor: pointer;
-}
-li {
-    list-style: none;
 }
 img {
     display: block;

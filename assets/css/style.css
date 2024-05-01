@@ -22,8 +22,12 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin: 45px 0;
+    gap: 40px;
+    margin: 56px 0;
+}
+section {
+    width: var(--width);
+    margin: 0 auto 20px auto;
 }
 
 /* CABECALHO */
@@ -45,11 +49,8 @@ main {
     font-family: var(--fonte-secundaria);
     font-size: 1.5em;
 }
-.cabecalho__logo p {
-    font-size: 1.8em;
-}
 .cabecalho__logo img {
-    height: 49px;
+    height: 45px;
 }
 .cabecalho__links {
     display: flex;
@@ -61,6 +62,7 @@ main {
     font-size: 1.1em;
     color: var(--fonte-cor);
     cursor: pointer;
+    scroll-margin-top: 20px;
 }
 
 /* SOBRE MIM */
@@ -119,6 +121,8 @@ main {
 /* TITULO DAS SESSOES */
 
 .titulo-sessao {
+    width: var(--width);
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -142,13 +146,6 @@ main {
 
 /* TECNOLOGIAS */
 
-.tecnologias {
-    margin: 0 auto;
-    width: var(--width);
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
 .tecnologias__ilustracoes {
     width: 100%;
     padding: 3vh 0;
@@ -178,31 +175,23 @@ main {
 
 /* PROJETOS */
 
-.projetos {
-    margin: 0 auto;
-    width: var(--width);
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
 .projetos__lista {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
 }
-.projetos__item a {
+.projetos__item {
     width: var(--width);
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid var(--cor-bordas);
     border-radius: 10px;
-}
-.projetos__item a:hover {
+    color: var(--fonte-cor);
     background-color: var(--cor-destaque);
-    transform: scale(1.02);
-    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 .projetos__item__imagem {
     background-color: var(--cor-bordas);
@@ -217,7 +206,7 @@ main {
 .projetos__item__texto {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px 0;
     font-family: var(--fonte-principal)
 }
 .projetos__item__texto h2 {
@@ -225,7 +214,7 @@ main {
     text-align: center;
 }
 .projetos__item__texto p {
-    font-size: 0.72em;
+    font-size: 0.75em;
     text-align: justify;
 }
 
@@ -334,10 +323,6 @@ hr {
 
 @media (min-width: 1240px) {
 
-    main {
-        gap: 80px;
-        margin: 70px 0;
-    }
     /* CABECALHO */
 
     .cabecalho { 
@@ -348,10 +333,6 @@ hr {
     .cabecalho__logo, .cabecalho__links *, .cabecalho__links {
         margin: 0;
     }
-    .cabecalho__logo p {
-        font-size: 1.5em;
-    }
-    
     .cabecalho__links {
         width: 40%;
         flex-direction: row;
@@ -415,34 +396,17 @@ hr {
     /* PROJETOS */
 
     .projetos__lista {
-        display: grid;
-        grid-template-columns: 69% 28%;
-        grid-template-rows: 216px;
-        gap: 34px;
-        grid-template-areas: 
-        "item1 item2"
-        "item3 item2"
-        ;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 24px;
     }
-    .projetos__item a {
+    .projetos__item {
         width: auto;
     }
-    .projetos__item:nth-child(2) > a {
-        display: flex;
-        flex-direction: column;
-        height: 466px; 
-    }
-    .projetos__item:nth-child(2) > a .projetos__item__imagem {
-        justify-content: center;
+    .projetos__item__texto p {
+        font-size: 0.9em;
     }
     .projetos__item__imagem img {
-        width: 320px;
-    }
-    .projetos__item__texto h2 {
-        margin: 8px;
-    }
-    .projetos__item__texto p {
-        font-size: 0.92em;
+        width: 100%;
     }
 
     /* CONTATOS */

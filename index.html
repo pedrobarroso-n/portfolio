@@ -7,25 +7,24 @@
     <link rel="shortcut icon" href="assets/image/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
     <header>
-        <nav class="cabecalho">
+        <nav id="topo" class="cabecalho">
             <ul class="cabecalho__links">
-                <li>Sobre mim</li>
-                <li>Tecnologias</li>
-                <li>Projetos</li>
-                <li>Contatos</li>
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contatos">Contatos</a>
             </ul>
             <div class="cabecalho__logo">
-                <p>BN. PEDRU</p>
+                <p>PEDRO BN</p>
                 <img src="assets/image/icons/logo.png" alt="Logo ilustrativa de programacao do Portfolio">
             </div>
         </nav>
     </header>
     <main>
-        <section class="sobre-mim">
+        <section id="sobre-mim" class="sobre-mim">
             <div class="sobre-mim__descricao">
                 <h1>DESENVOLVEDOR FRONT-END</h1>
                 <p>
@@ -55,13 +54,15 @@
                 <img src="assets/image/picture/foto-perfil.jpg" alt="foto de perfil de Pedro Barroso, criador do portfolio">
             </div>
         </section>
+
+        <div id="tecnologias" class="titulo-sessao">
+            <span class="titulo-sessao__icone">
+                <img src="assets/image/icons/tecnologia.png" alt="icone da parte de tecnologias do site">
+            </span>
+            <h2>Tecnologias</h2>
+        </div>
+
         <section class="tecnologias">
-            <div class="titulo-sessao">
-                <span class="titulo-sessao__icone">
-                    <img src="assets/image/icons/tecnologia.png" alt="icone da parte de tecnologias do site">
-                </span>
-                <h2>Tecnologias</h2>
-            </div>
             <div class="tecnologias__ilustracoes">
                 <div class="tecnologias__ilustracoes__icones">
                     <p>HTML5</p>
@@ -85,53 +86,42 @@
                 </div>
             </div>
         </section>
+
+        <div id="projetos" class="titulo-sessao">
+            <span class="titulo-sessao__icone">
+                <img src="assets/image/icons/projetos.png" alt="icone da parte de projetos do site">
+            </span>
+            <h2>Projetos</h2>
+        </div>
+
         <section class="projetos">
-            <div class="titulo-sessao">
-                <span class="titulo-sessao__icone">
-                    <img src="assets/image/icons/projetos.png" alt="icone da parte de projetos do site">
-                </span>
-                <h2>Projetos</h2>
-            </div>
             <div class="projetos__lista">
                 <div class="projetos__item">
-                    <a href="https://github.com/pedrobarroso-n/nosdearte" target="_blank">
-                        <div class="projetos__item__imagem">
-                            <img src="assets/image/picture/nosdearte.png" alt="imagem de projeto do github">
-                        </div>
-                        <div class="projetos__item__texto">
-                            <h2>Nós de Arte</h2>
-                            <p>
-                                Este website é baseado em um projeto anterior, desenvolvido na wix.com como projeto de exibição durante um evento da faculdade. Um breve resumo para contexto, a Nós de Arte é uma pequeno conjunto de artesãs de minha cidade, este projeto visava criar um meio onde as mesmas poderiam apresentar seus trabalhos e vender seus produtos.
-                            </p>
-                        </div></a>
+                    <div class="projetos__item__imagem">
+                        <img src="assets/image/picture/nosdearte.png" alt="imagem de projeto do github">
+                    </div>
+                    <div class="projetos__item__texto">
+                        <h2>Nós de Arte</h2>
+                        <p>
+                            Este website é baseado em um projeto anterior, desenvolvido na wix.com como projeto de exibição durante um evento da faculdade. Um breve resumo para contexto, a Nós de Arte é uma pequeno conjunto de artesãs de minha cidade, este projeto visava criar um meio onde as mesmas poderiam apresentar seus trabalhos e vender seus produtos.
+                        </p>
+                    </div>
                 </div>
                 <div class="projetos__item">
-                    <a href="https://github.com/pedrobarroso-n/controle_de_vendas" target="_blank">
-                        <div class="projetos__item__imagem">
-                            <img src="assets/image/picture/controle-de-vendas.png" alt="imagem de projeto do github">
-                        </div>
-                        <div class="projetos__item__texto">
-                            <h2>Controle de Vendas</h2>
-                            <p>
-                                Este projeto consiste em um sistema simples de controle de vendas usando a linguagem Python fortalecido usando a base de dados Sqlite3 junto do microframework Flask, a interface permite realizar funções simples como: adicionar, editar e excluir demais registros de 3 tabelas relacionadas.
-                            </p>
-                        </div></a>
-                </div>
-                <div class="projetos__item">
-                    <a href="https://github.com/pedrobarroso-n/nosdearte" target="_blank">
-                        <div class="projetos__item__imagem">
-                            <img src="assets/image/picture/nosdearte.png" alt="imagem de projeto do github">
-                        </div>
-                        <div class="projetos__item__texto">
-                            <h2>Nós de Arte</h2>
-                            <p>
-                                Este website é baseado em um projeto anterior, desenvolvido na wix.com como projeto de exibição durante um evento da faculdade. Um breve resumo para contexto, a Nós de Arte é uma pequeno conjunto de artesãs de minha cidade, este projeto visava criar um meio onde as mesmas poderiam apresentar seus trabalhos e vender seus produtos.
-                            </p>
-                        </div></a>
+                    <div class="projetos__item__imagem">
+                        <img src="assets/image/picture/controle-de-vendas.png" alt="imagem de projeto do github">
+                    </div>
+                    <div class="projetos__item__texto">
+                        <h2>Controle de Vendas</h2>
+                        <p>
+                            Este projeto consiste em um sistema simples de controle de vendas usando a linguagem Python fortalecido usando a base de dados Sqlite3 junto do microframework Flask, a interface permite realizar funções simples como: adicionar, editar e excluir demais registros de 3 tabelas relacionadas.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contatos">
+
+        <section id="contatos" class="contatos">
             <div class="contatos__logo">
                 <div class="contatos__logo__titulo">
                     <h2>CONTATOS</h2>
@@ -167,9 +157,12 @@
             </div>
             <div class="rodape__voltar-topo">
                 <p>Voltar ao topo</p>
-                <img src="assets/image/icons/seta-cima.png" alt="icone de voltar para o topo da pagina">
+                <a href="#topo">
+                    <img src="assets/image/icons/seta-cima.png" alt="icone de voltar para o topo da pagina">
+                </a>
             </div>
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
