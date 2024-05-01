@@ -193,6 +193,10 @@ section {
     background-color: var(--cor-destaque);
     cursor: pointer;
 }
+.projetos__item:hover {
+    transition: background 0.3s linear;
+    transform: scale(1.02);
+}
 .projetos__item__imagem {
     background-color: var(--cor-bordas);
     padding: 5px;
